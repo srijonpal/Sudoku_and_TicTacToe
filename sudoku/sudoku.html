@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+        <title>Sudoku</title>
+        
+    </head>
+
+    <body>
+        <div class="head">
+            <h1> SUDOKU GAME </h1>
+        </div>
+        
+        
+            <div class="watch" >
+                <b>HOW TO PLAY</b>
+                <div class = "facts">
+                        <ul>
+                            <li>This Sudoku game involves completing the game with minimum errors as fast as possible.</li>
+                            <li>Start the Game by clicking PLAY and START the timer.</li>
+                            <li>Select the number from the bottom tile and fill in the empty boxes in the grid</li>
+                          </ul>
+                </div>
+                <b>Errors : </b><div id ="error">0</div><br>
+
+                <div class="time">
+                    00:00:00
+                </div>
+                <div class="controls">
+                    <button id="start">START</button>
+                    <button id="reset">RESET</button>
+                </div>
+                <br>
+                <div class = "oper">
+                    <button type="button" id="setGame" onclick="setGame()" >PLAY</button>
+                    <button type="button" id="answer" onclick="answer()" >SOLVE</button>
+                </div>
+
+        
+            </div>
+            <div class="game" >
+                <div id="board" ></div><br>
+                <div id="digits"></div>
+            </div>
+        
+        
+        <br>
+
+        <!-- <div class="watch" >
+            <button type="button" id="setGame" onclick="setGame()" >NEW GAME</button>
+            <button type="button" id="answer" onclick="answer()" >ANSWER</button>
+        </div> -->
+        <br>
+
+        <link rel="stylesheet" href="sudoku.css">
+        <script src="app.js"></script>
+        <script src="time.js"></script>
+    </body>
+
+
+</html>
