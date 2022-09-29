@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="tictactoe.js"></script>
+</head>
+<body>
+  <div class="head">
+      <h1> TIC_TAC_TOE GAME </h1>
+  </div>
+  <div class="info" >
+    <div id = "facts">
+      <h2><center> <b>Rules & Instructions</b> </center></h2>
+          <ul>
+                <li>Two players take turns to fill in the grid.</li>
+                <li>Player-1 starts the game with O and then Player-2 fills in X and this alternates.</li> 
+                <li>The game ends if either player WINS or if it's a DRAW.</li>
+          </ul>
+          <div id = "instr">Player - O starts the game.</div>
+          <div id = "result">RESULT awaits.</div>
+    </div>
+    <br>
+    <div id="board">
+    </div>
+    
+    <div id="control">
+      <button type="button" id="reset" onclick="setGame()">RESET</button>
+    </div>
+  </div>
+</body>
+</html>
